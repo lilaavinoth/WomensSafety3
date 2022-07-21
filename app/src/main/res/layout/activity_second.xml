@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign out"
+        android:id="@+id/signout"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/phoneno"
+        android:layout_centerHorizontal="true"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getotp"
+        android:text="Get OTP"
+        android:textAllCaps="false"
+        android:layout_below="@+id/phoneno"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getotp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter OTP"
+        android:id="@+id/enterotp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/enterotp"
+        android:id="@+id/verify"
+        />
+
+</RelativeLayout>
